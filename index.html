@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070a12" />
+    <meta name="description" content="Arvinth SN — Software Engineer building intelligent systems." />
+    <title>ARVINTH.SN — Intelligent Systems</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.4.0/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="robot.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div><div class="cursor" aria-hidden="true"></div>
+    <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
+    <header class="nav"><a class="brand" href="#home"><i></i> ARVINTH<span>.SN</span></a><nav aria-label="Main navigation"><a class="active" href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a></nav><button class="talk-button" data-chat>Let's talk <b>↗</b></button></header>
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">AI <span>✦</span> BACKEND <span>✦</span> DATA <span>✦</span> SYSTEMS</p>
+          <h1>BUILDING<br /><em>INTELLIGENT</em><br />SYSTEMS<span>.</span></h1>
+          <p class="intro">I'm Arvinth — a Software Engineer passionate about AI, data, and creating real-world systems that make an impact.</p>
+          <div class="actions"><a class="primary" href="#projects">Explore my work <b>→</b></a><button class="watch" data-chat><i>▶</i> Meet the assistant</button></div>
+        </div>
+        <div class="robot-stage" id="robot" tabindex="0" role="button" aria-label="AI assistant. Click once for robot mode, double click for chat, triple click for car mode.">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="robot-glow"></div>
+          <div class="bubble" id="bubble"><strong>Hi! <span>👋</span></strong><br />I'm Arvinth's AI assistant.<br /><small>Double click to talk, triple click to drive.</small></div>
+          <model-viewer id="robot-model" src="https://modelviewer.dev/shared-assets/models/RobotExpressive.glb" alt="Animated 3D AI assistant" autoplay animation-name="Idle" animation-crossfade-duration="350" camera-controls disable-zoom interaction-prompt="none" camera-orbit="0deg 78deg 105%" camera-target="0m 0.75m 0m" shadow-intensity="1.4" environment-image="neutral" exposure="1.15">
+            <img class="robot-fallback" src="assets/robot-hero.png" alt="AI humanoid assistant" />
+          </model-viewer>
+          <div class="tap-hint">◉ &nbsp; interact with me</div>
+        </div>
+        <div class="hero-stats"><div><b>10<sup>+</sup></b><span>Projects</span></div><div><b>2<sup>+</sup></b><span>Years building</span></div><div><b>AI</b><span>Focus</span></div><div><b>∞</b><span>Learning</span></div></div>
+        <a class="scroll-note" href="#about">SCROLL TO EXPLORE <span>↓</span></a>
+      </section>
+
+      <section class="about panel-section" id="about"><p class="eyebrow">01 / IDENTITY</p><div class="section-heading"><h2>WHO IS <em>ARVINTH?</em></h2><p>I design dependable digital systems where thoughtful engineering meets useful intelligence.</p></div><div class="word-grid"><span>AI</span><span>DATA</span><span>BACKEND</span><span>SYSTEMS</span></div><div class="about-strip"><p>From data-rich products to AI-powered workflows, I focus on clear architecture, practical automation, and experiences people can trust.</p><a href="#contact">More about me <b>↗</b></a></div></section>
+
+      <section class="projects panel-section" id="projects"><p class="eyebrow">02 / SELECTED WORK</p><div class="section-heading"><h2>MADE TO <em>MOVE</em></h2><p>Products engineered from the interface to the infrastructure.</p></div><div class="project-track">
+        <article class="project featured"><div class="project-visual architecture"><span>USER</span><i></i><span>REACT</span><i></i><span>FASTAPI</span><i></i><span>RAG + LLM</span><i></i><span>PGVECTOR</span></div><div class="project-info"><p>01 — AI SYSTEM</p><h3>SYNOVA</h3><p>An intelligent insurance platform that connects contextual search, live provider data, and human-friendly answers.</p><div class="tags"><b>React</b><b>FastAPI</b><b>RAG</b><b>PostgreSQL</b></div><a href="#contact">View case study ↗</a></div></article>
+        <article class="project"><div class="project-visual globe"><div></div><p>WILDLIFE<br />INTELLIGENCE</p></div><div class="project-info"><p>02 — COMPUTER VISION</p><h3>CANOPY</h3><p>Tools for turning field observations into timely environmental signals.</p><div class="tags"><b>Python</b><b>Vision AI</b><b>Data</b></div><a href="#contact">View case study ↗</a></div></article>
+      </div></section>
+
+      <section class="skills panel-section" id="skills"><p class="eyebrow">03 / TECH CONSTELLATION</p><div class="section-heading"><h2>TOOLS WITH <em>INTENTION</em></h2><p>A connected stack for building things that last.</p></div><div class="constellation"><div class="core">ARVINTH</div><span style="--x:14%;--y:23%">Python</span><span style="--x:38%;--y:10%">React</span><span style="--x:72%;--y:18%">FastAPI</span><span style="--x:83%;--y:52%">LLMs</span><span style="--x:66%;--y:82%">Docker</span><span style="--x:25%;--y:79%">PostgreSQL</span><span style="--x:7%;--y:53%">Java</span><span style="--x:48%;--y:91%">Spring Boot</span><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M14 23L50 50L38 10M50 50L72 18M50 50L83 52M50 50L66 82M50 50L25 79M50 50L7 53M50 50L48 91" /></svg></div></section>
+
+      <section class="experience panel-section" id="experience"><p class="eyebrow">04 / TRAJECTORY</p><div class="section-heading"><h2>ONWARD <em>— ALWAYS</em></h2><p>Learning fast, shipping thoughtfully, and seeking meaningful problems.</p></div><div class="timeline"><article><span>2023</span><div><h3>Engineering foundation</h3><p>Developed a strong foundation in software, data, and product thinking.</p></div></article><article><span>2025</span><div><h3>Data & AI projects</h3><p>Built applied analytics and AI systems designed for real constraints.</p></div></article><article class="current"><span>NOW</span><div><h3>Software Engineer</h3><p>Exploring the frontier where dependable systems meet intelligent interfaces.</p></div></article></div></section>
+
+      <section class="contact panel-section" id="contact"><p class="eyebrow">05 / CONNECT</p><h2>HAVE A BOLD IDEA?<br /><em>LET'S MAKE IT REAL.</em></h2><a class="primary large" href="mailto:hello@arvinth.dev">Start a conversation <b>↗</b></a><footer><span>© 2026 ARVINTH.SN</span><span>BUILT WITH CURIOSITY &amp; CAFFEINE</span><span>INDIA / WORLDWIDE</span></footer></section>
+    </main>
+    <aside class="chatbot" id="chatbot" aria-hidden="true"><div class="chat-head"><span><i></i> ARVINTH AI</span><button id="close-chat" aria-label="Close chat">×</button></div><div class="chat-body" id="chat-body"><div class="bot-message">Hi! I'm Arvinth's AI assistant.<br /><br />Ask me about his work, skills, or the systems he loves building.</div><div class="quick-actions"><button data-question="about">About Arvinth</button><button data-question="skills">Skills & tech</button><button data-question="projects">Projects</button><button data-question="experience">Experience</button></div></div><form class="chat-input" id="chat-form"><input id="chat-input" aria-label="Message the assistant" placeholder="Ask a question..." autocomplete="off" /><button aria-label="Send message">→</button></form></aside>
+    <div class="transform-overlay" id="transform"><div class="speed-lines"></div><p>TRANSFORMATION <span>INITIATED</span></p><div class="car">◖<i></i>◗</div><small>CAR MODE / DRIVE THROUGH EXPERIENCE</small></div>
+    <script src="script.js"></script>
+  </body>
+</html>
